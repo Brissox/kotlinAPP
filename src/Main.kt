@@ -58,6 +58,34 @@ println("############################")
         println("$i")
     }
 
+    println("#################")
+    //orden Descendente
+
+    for (i in 10 downTo 1 step 2) {
+        println("$i")
+    }
+
+
+    println("#################")
+    //Recorrer Array o Lista
+
+    val frutas = listOf("manzana","naranja","platano")
+
+    for (fruta in frutas) {
+        println(fruta)
+    }
+
+
+
+    println("#################")
+    //Recorrer Array o Lista
+
+    val numeros = listOf(10,20,30,40,50)
+
+    for (i in numeros.indices) {
+        println("Indice $i: ${numeros[i]}")
+    }
+    println(numeros[4])
 
 
 }
