@@ -111,6 +111,12 @@ println("############################")
 
     println("#################")
     println(suma2(3,4))
+
+    println("#################")
+    println(sum3(5,6))
+
+    println("#################")
+    println(calcular(7,8,::suma2))
 }
 
 //Sintaxis tradicional
@@ -118,4 +124,15 @@ fun suma(a: Int, b: Int): Int {
     return a + b
 }
 
+//kotlin elige el tipo de dato de retorno
 fun suma2(a: Int, b: Int) = a + b
+
+//Lambda o anonimo
+
+val sum3 = {a: Int, b: Int -> a + b}
+
+//Orden superior
+
+fun calcular(a: Int, b: Int, operator: (Int, Int) -> Int): Int {
+    return operator(a,b)
+}
