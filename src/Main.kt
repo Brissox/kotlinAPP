@@ -1,6 +1,9 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
+
+
+//var nombre:tipo = valor ///
     val name = "Kotlin"
 
     //valor null
@@ -87,7 +90,32 @@ println("############################")
     }
     println(numeros[4])
 
+    println("#################")
+    //While
+    var ejemploWhile = 1
+    while (ejemploWhile <= 10) {
+        println("$ejemploWhile")
+        ejemploWhile++
+    }
+    println("#################")
+    //DoWhile
+    var ejemplodowhile = 1
+    do {
+        println("$ejemplodowhile")
+        ejemplodowhile++
+    } while (ejemplodowhile <= 5)
 
+    println("#################")
+
+    println(suma(1,2))
+
+    println("#################")
+    println(suma2(3,4))
 }
 
-//var nombre:tipo = valor ///
+//Sintaxis tradicional
+fun suma(a: Int, b: Int): Int {
+    return a + b
+}
+
+fun suma2(a: Int, b: Int) = a + b
